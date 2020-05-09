@@ -5,7 +5,7 @@ Saturday 9 May 2020
 Project 3
 
 ### Description
-Python Bike Analysis
+Python Bike Analysis & Show Stats
 
 ### Files used
 chicago.csv
