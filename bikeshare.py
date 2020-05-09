@@ -44,7 +44,7 @@ def get_filters():
         print("Invalid Entry")
         day = input()
 
-    #we assign value to month number
+    #we assign value to month (in numbers)
     if month == "january":
         month = 1
     elif month == "february":
@@ -143,7 +143,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics (stat) on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
