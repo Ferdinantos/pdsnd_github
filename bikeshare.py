@@ -58,7 +58,7 @@ def get_filters():
     elif month == "june":
         month = 6
 
-    #same to above (in numbers)
+    #we assign value to day (in numbers)
     if day == "monday":
         day = 1
     elif day == "tuesday":
