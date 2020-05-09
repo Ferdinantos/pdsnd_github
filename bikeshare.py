@@ -18,7 +18,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # TO DO: get user input for city with any caps (chicago, new york city, washington)
     print('Which city do you want to explore from chicago, new york city and washington?\n')
     city = input()
     city = city.lower()
@@ -44,7 +44,7 @@ def get_filters():
         print("Invalid Entry")
         day = input()
 
-    #we assign value to month
+    #we assign value to month number
     if month == "january":
         month = 1
     elif month == "february":
@@ -58,7 +58,7 @@ def get_filters():
     elif month == "june":
         month = 6
 
-    #same to above
+    #same to above (in numbers)
     if day == "monday":
         day = 1
     elif day == "tuesday":
@@ -102,7 +102,7 @@ def load_data(city, month, day):
 
     # filter by month if applicable
     if month != 'all':
-        # use the index of the months list to get the corresponding int
+        # use the index of the months list to get the corresponding int and give us with number the month
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
 
@@ -143,7 +143,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics (stat) on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
